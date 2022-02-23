@@ -1,0 +1,85 @@
+nav div ul{
+    width: 80%;
+    display:flex;
+    justify-content: space-around;
+    font-family: var(--secondary-font);
+    font-size:clamp(1.8rem, 2vw, 2rem);
+    font-weight:600;
+    line-height: 80%;
+    letter-spacing: 0.065em;
+    text-align: center;
+    color: var(--text-color-black);
+    cursor: pointer;
+    
+}
+
+nav div ul li:hover{
+    text-decoration: underline;
+}
+
+
+.primary-button__container{
+    transform: scale(1.3);
+}
+
+.primary-button__container:hover{
+    transform: scale(1.2);
+}
+
+#menu{
+    border: none;
+    background: #ececf1e0;
+    max-width: 400px;
+}
+
+#menu hr, #menu ul:first-child{
+    display: none;
+}
+
+.contact__container span{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    display: block;
+    background-image: url('circles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+    animation:10s infinite linear;
+}
+
+.contact__container span:first-child{
+    top: 100px;
+    left: 10%;
+    animation-name: span-1;
+}
+
+.contact__container span:nth-child(2){
+    bottom: 100px;
+    right: 10%;
+    animation-name: span-2;
+}
+
+@keyframes span-1{
+    
+    50%{
+        transform: translateY(500px) rotate(180deg);
+    }
+
+    100%{
+        transform: translateY(0)
+    }
+}
+
+@keyframes span-2{
+    
+    50%{
+        transform: translateY(-500px) rotate(360deg);
+    }
+
+    
+    100%{
+        transform: translateY(0)
+    }
+}
