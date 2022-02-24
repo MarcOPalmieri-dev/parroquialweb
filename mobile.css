@@ -22,14 +22,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-size: 62.5%;
-        list-style: none;
         text-decoration: none;
-        
+        font-size: 62.5%;
+       
     }
 
     html{
         font-family: var(--main-font);
+        scroll-behavior: smooth;
         font-size: 62.5%;
     }
 
@@ -102,6 +102,7 @@
 
     /* Disable on mobile */
     ul{
+        list-style: none;
         display: none;
     }
 
@@ -247,7 +248,8 @@
 
 
     /* Contact section */
-    .contact__container{
+    /* Ideary container general Styles */
+    .contact__container, .ideary__main__container{
         position:relative;
         width: 100%;
         height: 100vh;
@@ -333,3 +335,144 @@
         transition: all 300ms;
     }
     
+/* ideary styles */
+.ideary__main__container{
+        background: #F8FAFF;
+        height: 100%;
+}
+
+.ideary__main__container h2{
+    margin-top:160px;
+    margin-bottom:30px;
+    font-size:clamp(1.4rem, 3vw, 2rem);
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+}
+
+.ideary__card__container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    z-index: 10;
+}
+
+.ideary__card__container .ideary__card {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background: white;
+    
+}
+
+.ideary__card__container .ideary__card > div:first-child{
+    padding: 0.5em 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 30px;
+    font-family: var(--secondary-font);
+    font-size:4rem;
+    font-weight:normal;
+    letter-spacing: 0.105em;
+    color: var(--text-color-white);
+}
+
+
+.ideary__card:nth-child(1) div:first-child{
+    background: var(--main-color-red);
+}
+
+.ideary__card__content{
+    width:100%;
+}
+
+
+.ideary__card__content h3{
+    visibility:hidden;
+}
+
+
+.ideary__card__content p, strong{
+    padding: 1em 0.7em;
+    font-family: var(--secondary-font);
+    font-size:clamp(1.3rem, 3vw, 1.6rem);
+    font-weight:normal;
+    line-height: 140%;
+    letter-spacing: 0.105em;
+    color:var(--text-color-black);
+}
+
+.ideary__card__content strong{
+    padding: 0;
+    font-weight:bold;
+    color: var(--main-color-red);
+}
+
+ .card-1{
+    border:2px solid var(--main-color-red);
+    
+   
+}
+
+
+
+/* card-2 styles */
+.ideary__card:nth-child(2) div:first-child{
+    background:var(--main-color-blue);
+}
+
+.card-2{
+    border:2px solid var(--main-color-blue);
+    
+}
+
+
+
+.card-2 > p{
+    font-weight: bold;
+}
+
+.card-2__ul{
+    margin: 15px;
+    margin-left: 3rem;
+    display: block;
+    list-style-type: square;
+    color: var(--main-color-blue);
+}
+
+.card-2__ul li{
+    margin-bottom: 0.5em;
+    font-family: var(--secondary-font);
+    font-size:clamp(1.3rem, 3vw, 1.6rem);
+    font-weight: normal;
+    line-height: 170%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+}
+
+
+/* card-3 styles */
+.ideary__card:nth-child(3) > div:first-child{
+    background:var(--main-color-yellow);
+    color: rgb(250, 250, 250);
+}
+
+.card-3{
+    border:2px solid var(--main-color-yellow);
+    
+    
+}
+
+
+.card-3 div p:first-child{
+    font-weight: bold;
+}
+
+#card-3__text-container {
+    display:flex;
+    justify-content:space-around;
+}

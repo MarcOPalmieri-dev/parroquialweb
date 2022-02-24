@@ -36,7 +36,11 @@ nav div ul li:hover{
     display: none;
 }
 
-.contact__container span{
+.contact__container button:hover{
+    border: 2px solid rgb(1, 25, 71);
+}
+
+.contact__container span, .ideary__main__container span{
     position: absolute;
     width: 60px;
     height: 50px;
@@ -49,13 +53,13 @@ nav div ul li:hover{
     animation:10s infinite linear;
 }
 
-.contact__container span:first-child{
+.contact__container span:first-child, .ideary__main__container span:first-child{
     top: 100px;
     left: 10%;
     animation-name: span-1;
 }
 
-.contact__container span:nth-child(2){
+.contact__container span:nth-child(2), .ideary__main__container span:nth-child(2){
     bottom: 100px;
     right: 10%;
     animation-name: span-2;
@@ -64,22 +68,63 @@ nav div ul li:hover{
 @keyframes span-1{
     
     50%{
-        transform: translateY(500px) rotate(180deg);
+        transform: translateY(500px) translateX(200px) rotate(180deg);
     }
 
     100%{
-        transform: translateY(0)
+        transform: translate(0)
     }
 }
 
 @keyframes span-2{
     
     50%{
-        transform: translateY(-500px) rotate(360deg);
+        transform: translateY(-500px) translateX(-200px) rotate(360deg);
+        transform:matrix()
     }
 
     
     100%{
-        transform: translateY(0)
+        transform: translate(0);
     }
+}
+
+.ideary__card__container .ideary__card{
+    flex-direction: row;
+}
+
+.ideary__card__container .ideary__card > div:first-child {
+    width: 90px;
+    height: auto;
+}
+.ideary__card__container .ideary__card > div:first-child >h3{
+    display:none;
+}
+
+
+
+.ideary__card__container .ideary__card:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.ideary__card__content h3{
+    margin: 10px 0 0 10px;
+    visibility:visible;
+    font-family: var(--secondary-font);
+    font-size:3.5rem;
+    font-weight:normal;
+    letter-spacing: 0.105em;
+}
+
+.card-1 h3{
+    color: var(--main-color-red);
+}
+
+.card-2 h3{
+    color: var(--main-color-blue);
+}
+
+.card-3 h3{
+    color: var(--main-color-yellow);
+    margin-left: 12%;
 }
