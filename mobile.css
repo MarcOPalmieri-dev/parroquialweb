@@ -476,3 +476,92 @@
     display:flex;
     justify-content:space-around;
 }
+
+/* TEAM PAGE STYLES */
+
+.team-header{
+    background: white;
+}
+
+.team-cards__main-container{
+    padding-bottom:50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    background: white;
+}
+
+.team-cards__main-container h3, h4, p{
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: clamp(2.2rem,3vw,2.7rem);
+    line-height: 161.7%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+}
+
+.team-cards__main-container h3{
+    margin-top: 40px;
+    width: 60%;
+}
+.team-cards__container{
+    padding-bottom: 20em;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.team-cards{
+    margin-top: 50px;
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.team-cards img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 40%);
+}
+
+.team-cards h4{
+    margin: 0.8em 0 0 0.4em;
+    font-size: clamp(1rem,3vw,2rem);
+    font-weight: 500;
+}
+
+.team-cards p{
+    font-size:clamp(0.7rem,3vw,1.3rem);
+    font-weight: 400;
+}
+
+.team-cards__main-container:nth-child(2){
+    background: #84B5FF
+}
+
+.team-cards__main-container:nth-child(4){
+    background: #FFE26A
+}
+
+.team-cards__main-container:nth-child(6){
+    background: #ff8786
+}
+
+.team-cards__main-container:nth-child(8){
+    background:  #84B5FF
+}
+
+.only-name p{
+    margin: 10px 0;
+}
