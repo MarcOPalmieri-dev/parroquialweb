@@ -129,3 +129,18 @@ nav div ul li:hover{
     margin-left: 12%;
 }
 
+
+.normative-title__container p{
+    margin-top: 40px;
+    line-height: 160%;
+}
+.uniform-main__container{
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+}
+
+.uniform-main__container img{
+    max-height: none;
+    /* margin: 0 0 30px 30px; */
+
+}
