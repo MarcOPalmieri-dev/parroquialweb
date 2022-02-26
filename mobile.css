@@ -572,7 +572,7 @@
 
 /* Rules and normative styles */
 
-.normative-header{
+.normative-header, .ideary-header{
     position: relative;
     height: 90vh;
     display: flex;
@@ -580,7 +580,11 @@
     background: white;
 }
 
-.normative-title__container{
+.ideary-header{
+    background: #f8faff;
+}
+
+.normative-title__container,.ideary-title__container{
     margin-top: 20vh;
     margin-left: 5vw;
     margin-right: 10px;
@@ -588,20 +592,28 @@
     
 }
 
-.normative-title__container h2{
+.normative-title__container h2, .ideary-title__container h2{
     font-size:clamp(2.4rem, 3vw, 6.8rem);
     line-height: 160%;
     letter-spacing: 0.105em;
     color: var(--text-color-black);
 }
 
-.normative-title__container p{
+.normative-title__container p, .ideary-title__container p{
     margin-top:90px;
-    width: 40%;
+    width: 60%;
     font-family: var(--secondary-font);
-    font-size:clamp(1.4rem, 2.4vw, 2.6rem);
+    font-size:clamp(1.6rem, 2.4vw, 2.6rem);
+    line-height:160%;
     letter-spacing: 0.105em;
     color: var(--text-color-black);
+}
+
+.ideary-title__container p{
+    margin-top:4em;
+    width: 80%;
+    line-height:120%;
+    font-size:clamp(1.4rem, 2vw, 2rem);
 }
 
 .header-bar{
@@ -619,7 +631,7 @@
 
 .bar-2{
     top: 43vh;
-    width: 60%;
+    width: 50%;
     background:var(--main-color-yellow)
 }
 
@@ -750,3 +762,4 @@
     line-height: 120%;
     color: var(--text-color-black);
 }
+
