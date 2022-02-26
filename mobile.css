@@ -11,6 +11,10 @@
         --main-color-blue:#4B93FF;
         --main-color-yellow:#FAC901;
 
+        --secondary-color-red:#ff8786;
+        --secondary-color-blue:#84B5FF;
+        --secondary-color-yellow:#FFE26A;
+
         --text-color-white:#FDF1F1;
         --text-color-black:#323232;
 
@@ -493,7 +497,7 @@
     background: white;
 }
 
-.team-cards__main-container h3, h4, p{
+.team-cards__main-container h3,.team-cards__main-container h4,.team-cards__main-container p{
     text-align: center;
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -547,21 +551,83 @@
 }
 
 .team-cards__main-container:nth-child(2){
-    background: #84B5FF
+    background: var(--secondary-color-blue)
 }
 
 .team-cards__main-container:nth-child(4){
-    background: #FFE26A
+    background: var(--secondary-color-yellow)
 }
 
 .team-cards__main-container:nth-child(6){
-    background: #ff8786
+    background: var(--secondary-color-red)
 }
 
 .team-cards__main-container:nth-child(8){
-    background:  #84B5FF
+    background:  var(--secondary-color-blue)
 }
 
 .only-name p{
     margin: 10px 0;
+}
+
+/* Rules and normative styles */
+
+.rules__container{
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 95%;
+    background: var(--secondary-color-blue);
+    border-radius:5px;
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 40%);
+}
+
+.rules__container h3, span{
+    display:block;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: clamp(2rem,3vw,2.7rem);
+    line-height: 161.7%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-white);
+}
+
+.rules__container p, em{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: clamp(1.6rem,3vw,2rem);
+    line-height: 160%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+   
+}
+
+.rules__container em{
+    margin:3px 0;
+    display: block;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.rules__container span{
+    width: fit-content;
+    cursor: pointer;
+}
+
+.rules__container span:hover{
+   text-decoration: underline;
+}
+
+.rules__container:nth-child(2){
+    background:  var(--secondary-color-yellow); 
+}
+
+.rules__container:nth-child(2) > h3, span{
+    color:white;
+}
+
+.rules__container:nth-child(3){
+    background:  var(--secondary-color-red)
 }
