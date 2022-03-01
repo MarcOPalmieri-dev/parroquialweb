@@ -30,6 +30,7 @@ nav div ul li:hover{
     border: none;
     background: #ececf1e0;
     max-width: 400px;
+    
 }
 
 #menu hr, #menu ul:first-child{
@@ -43,14 +44,19 @@ nav div ul li:hover{
 .contact__container span, .ideary__main__container span{
     position: absolute;
     width: 60px;
-    height: 50px;
+    height: 60px;
+    /* width: 500px;
+    height: 500px; */
     display: block;
     background-image: url('circles.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity:0.5;
+    /* background: var(--secondary-color-red);
+    border-radius: 50%; */
+    opacity:0.3;
     animation:10s infinite linear;
+    z-index: 0;
 }
 
 .contact__container span:first-child, .ideary__main__container span:first-child{
@@ -63,12 +69,13 @@ nav div ul li:hover{
     bottom: 100px;
     right: 10%;
     animation-name: span-2;
+    /* background: var(--secondary-color-yellow); */
 }
 
 @keyframes span-1{
     
     50%{
-        transform: translateY(600px) translateX(300px) rotate(180deg);
+        transform: translateY(600px) translateX(300px) rotate(360deg);
     }
 
     100%{

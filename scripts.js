@@ -26,15 +26,6 @@ off_canvas_menu.addEventListener('animationend',()=>{
 
 const [...readmore_button] = document.getElementsByClassName('more');
 
-// readMoreFunction = (e)=>{
-//     if(e.target.dataset.number == "1"){
-//         const p_element = e.path[0].previousElementSibling
-//         if(p_element.classList.contains("hidden")){
-//             p_element.classList.remove("hidden")
-//             console.log(this)
-//         }
-//     }
-// }
 readmore_button.forEach(button=>{
     
     button.addEventListener('click',(e)=>{
@@ -51,16 +42,21 @@ readmore_button.forEach(button=>{
     })
 })
 
-// button.addEventListener('click',(e)=>{
-//     if(e.target.dataset.number == "1"){
-//         const p_element = e.path[0].previousElementSibling;
-        
-//         if(p_element.classList.contains("hidden")){
-//             p_element.classList.remove("hidden");
-//             button.innerText="Leer menos...";
 
-//         }else if(!p_element.classList.contains("hidden")){
-//             p_element.classList.add("hidden")
-//             button.innerText="Leer más..."
-//         }
-//     })
+// footer buttons
+
+const [...footer_more_button] = document.getElementsByClassName("footer-card__container");
+
+
+footer_more_button.forEach(button=>{
+    
+    button.addEventListener('click',()=>{
+            console.log(button.children[1])
+        if(button.children[1].classList.contains("hidden")){
+            button.children[1].classList.remove("hidden");
+
+        }else if(!button.children[1].classList.contains("hidden")){
+            button.children[1].classList.add("hidden")
+        }
+    })
+})
