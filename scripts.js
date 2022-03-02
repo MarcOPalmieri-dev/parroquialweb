@@ -1,6 +1,7 @@
 
 // AOS.init();
 
+
 const menu_button = document.getElementsByClassName("menu")[0];
 const off_canvas_menu = document.querySelector("#menu");
 
@@ -47,16 +48,25 @@ readmore_button.forEach(button=>{
 
 const [...footer_more_button] = document.getElementsByClassName("footer-card__container");
 
+const [...footer_content] = document.getElementsByClassName("footer-content__container");
 
-footer_more_button.forEach(button=>{
+if (!window.matchMedia("(min-width: 769px)").matches) {
+
+    footer_more_button.forEach(button=>{
+        
+        button.addEventListener('click',()=>{
+
+            if(button.children[1].classList.contains("hidden")){
+                button.children[1].classList.remove("hidden");
     
-    button.addEventListener('click',()=>{
-            console.log(button.children[1])
-        if(button.children[1].classList.contains("hidden")){
-            button.children[1].classList.remove("hidden");
-
-        }else if(!button.children[1].classList.contains("hidden")){
-            button.children[1].classList.add("hidden")
-        }
+            }else if(!button.children[1].classList.contains("hidden")){
+                button.children[1].classList.add("hidden")
+            }
+        })
     })
-})
+
+}else{
+    footer_content.forEach(button =>{
+        button.classList.remove("hidden");
+    })
+}

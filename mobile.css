@@ -172,7 +172,7 @@
    }
 
    
-   .primary-button__container:hover, button:hover{
+   .primary-button__container:hover{
        text-decoration: underline;
        border: 3px solid rgba(0, 18, 51);
        transform: scale(1.1);
@@ -337,6 +337,11 @@
         letter-spacing: 0.105em;
         cursor: pointer;
         transition: all 300ms;
+    }
+
+    .contact__container button:hover{
+        text-decoration: underline;
+        border: 2px solid rgb(1, 25, 71);
     }
     
 /* ideary styles */
@@ -767,10 +772,12 @@
 /* Footer styles */
 
 footer{
+    margin-top: 60px;
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 60px;
     width: 100%;
     border-top: 2px solid #d2d2d7;
+    background: #fbfbfb;
 }
 
 .footer-card__container{
@@ -781,6 +788,7 @@ footer{
 
 
 .footer-title__container{
+    margin-bottom: 15px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -788,16 +796,109 @@ footer{
     font-size: 2.6rem;
     line-height: 161.7%;
     letter-spacing: 0.105em;
-    color: var(--secondary-color-red);
     cursor: pointer;
 }
+ .title-one{
+    color: var(--secondary-color-red);
+}
 
-.footer-title__container:hover{
+ .title-one:hover{
     color:var(--main-color-red);
 }
+
+ .title-two{
+    color: var(--secondary-color-blue);
+}
+
+ .title-two:hover{
+    color:var(--main-color-blue);
+}
+
+.title-three{
+    color: var(--secondary-color-yellow);
+}
+
+ .title-three:hover{
+    color:var(--main-color-yellow);
+}
+
 
 .footer-title__container img{
     margin-right: 10px;
     width: 25px;
     height: 25px;
+}
+
+
+.footer-title__container img[alt="Contacto"], img[alt="Ubicación"]{
+    margin-left: -5px;
+    margin-right: 4px;
+    width: 35px;
+    height: 35px;
+}
+
+.footer-content__container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer-content__container > ul{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.footer-content__container h4, .footer-content__container p, .footer-content__container ul, .footer-content__container li, .footer-content__container a{ 
+    margin-bottom: 1em;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 161.7%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+    
+}
+
+.footer-content__container a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-content__container > h4{
+    margin:0 ;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+footer > section:last-child{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--secondary-font);
+    font-size: clamp(1.9rem,3vw,2.1rem);
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+}
+
+footer > section:last-child > h3, a{
+    width: 40%;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: clamp(1.1rem,3vw,1.4rem);
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+    font-weight: 500;
+}
+
+footer > section:last-child a{
+    font-weight: bold;
+    transition: all 0.2s ease-in-out; 
+}
+
+footer > section:last-child a:hover{
+    color: var(--secondary-color-red);
+    text-decoration: underline;
 }

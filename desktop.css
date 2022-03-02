@@ -37,9 +37,7 @@ nav div ul li:hover{
     display: none;
 }
 
-.contact__container button:hover{
-    border: 2px solid rgb(1, 25, 71);
-}
+
 
 .contact__container span, .ideary__main__container span{
     position: absolute;
@@ -155,4 +153,42 @@ nav div ul li:hover{
     max-height: none;
     /* margin: 0 0 30px 30px; */
 
+}
+
+footer > section:first-child{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-card__container{
+    width: 100%;
+}
+
+.footer-title__container{
+    justify-content: flex-end;
+    width: 50%;
+}
+.footer-card__container:nth-child(2){
+    border-left:2px solid #d2d2d7;
+    border-right:2px solid #d2d2d7;
+}
+
+.footer-content__container{
+    width: 50%;
+}
+
+.footer-content__container > ul {
+    width: 100%;
+}
+
+.title-one{
+    color: var(--main-color-red);
+    cursor: default;
+}
+ .title-two{
+    color: var(--main-color-blue);
+}
+
+.title-three{
+    color: var(--main-color-yellow);
 }
