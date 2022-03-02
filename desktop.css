@@ -13,6 +13,10 @@ nav div ul{
     
 }
 
+.logo__container{
+    margin-left: 10px;
+}
+
 nav div ul li:hover{
     text-decoration: underline;
 }
@@ -187,8 +191,10 @@ footer > section:first-child{
 }
  .title-two{
     color: var(--main-color-blue);
+    cursor: default;
 }
 
 .title-three{
     color: var(--main-color-yellow);
+    cursor: default;
 }
