@@ -70,3 +70,47 @@ if (!window.matchMedia("(min-width: 769px)").matches) {
         button.classList.remove("hidden");
     })
 }
+
+// Scripts to execute sliders 
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+  emailjs.init('user_NDTpGQZNkCkZ0WMxj4kKM')
+
+        const btn = document.getElementById('button');
+        const inputs = document.querySelectorAll('.inputs');
+
+        document.getElementById('form')
+        .addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log(document.querySelectorAll('option'))
+        btn.style.height="88px";
+
+        //Service de Parroquial
+        const serviceID = 'service_2uasrtd'
+        const templateID = 'template_hlphcv8';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+            
+            alert('Tu mensaje ha sido enviado!');
+
+            inputs.forEach(input=>{
+                input.value="";
+            })
+            }, (err) => {
+            alert('Ha ocurrido un error. Por favor, intentalo más tarde, o intenta enviar tu mensaje directamente a la respectiva dirección de mail que aparece en la lista anterior.');
+            });
+        });

@@ -13,6 +13,17 @@ nav div ul{
     
 }
 
+.desktop-menu__container a{
+    font-family: var(--secondary-font);
+    font-size:1.4rem;
+    font-weight:600;
+    line-height: 80%;
+    letter-spacing: 0.065em;
+    text-align: center;
+    color: var(--text-color-black);
+    cursor: pointer;
+}
+
 .logo__container{
     margin-left: 10px;
 }
@@ -43,7 +54,7 @@ nav div ul li:hover{
 
 
 
-.contact__container span, .ideary__main__container span{
+.circle-animated{
     position: absolute;
     width: 60px;
     height: 60px;
@@ -61,17 +72,29 @@ nav div ul li:hover{
     z-index: 0;
 }
 
-.contact__container span:first-child, .ideary__main__container span:first-child{
+.first{
     top: 100px;
     left: 10%;
     animation-name: span-1;
 }
 
-.contact__container span:nth-child(2), .ideary__main__container span:nth-child(2){
+.second{
     bottom: 100px;
     right: 10%;
     animation-name: span-2;
     /* background: var(--secondary-color-yellow); */
+}
+
+.third{
+    top: 200px;
+    right: 10%;
+    animation-name: span-3;
+}
+
+.fourth{
+    bottom: 200px;
+    left: 10%;
+    animation-name: span-4;
 }
 
 @keyframes span-1{
@@ -89,6 +112,30 @@ nav div ul li:hover{
     
     50%{
         transform: translateY(-600px) translateX(-300px) rotate(360deg);
+    }
+
+    
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes span-3{
+    
+    50%{
+        transform: translateY(600px) translateX(-300px) rotate(360deg);
+    }
+
+    
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes span-4{
+    
+    50%{
+        transform: translateY(-600px) translateX(300px) rotate(360deg);
     }
 
     
@@ -169,17 +216,14 @@ footer > section:first-child{
 }
 
 .footer-title__container{
-    justify-content: flex-end;
-    width: 50%;
+    justify-content: flex-start;
+    width: 100%;
 }
 .footer-card__container:nth-child(2){
     border-left:2px solid #d2d2d7;
     border-right:2px solid #d2d2d7;
 }
 
-.footer-content__container{
-    width: 50%;
-}
 
 .footer-content__container > ul {
     width: 100%;
@@ -197,4 +241,44 @@ footer > section:first-child{
 .title-three{
     color: var(--main-color-yellow);
     cursor: default;
+}
+
+.cards-content__container{
+    margin-left: 10px;
+}
+
+.cards__container:hover{
+    transform: scale(0.95);
+}
+
+.cards__container > img{
+    padding: 30px 20px 0 20px;
+}
+
+.institution-main__container{
+    margin: 0 auto;
+    margin-left: 100px;
+    width: 80%;
+}
+
+
+.institution-main__container:nth-child(even){
+    margin:0 auto;
+    margin-right: 100px;
+}
+
+.proyects__container img{
+    padding: 0;
+}
+
+.table__general-container{
+    width: 90%;
+}
+
+.table__container::-webkit-scrollbar{
+    height:0px;
+}
+
+.contact__container input[type="submit"]{
+    height: 69px;
 }
