@@ -42,7 +42,7 @@
     header{
         width: 100%;
         min-height: 100vh;
-        background-image: url('fondo-max.jpg');
+        background-image: url('./assets/fondo-max.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -128,7 +128,7 @@
         
         cursor: pointer;
         width: 36px;
-        background-image: url('menu.png');
+        background-image: url('./assets/menu.png');
     }
 
 
@@ -161,7 +161,7 @@
         margin-top: 4px;
         width: 100%;
         height: 9px;
-        background-image: url('diagonal-underline.svg');
+        background-image: url('./assets/diagonal-underline.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -180,7 +180,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('coloured-button.svg');
+        background-image: url('./assets/coloured-button.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -214,9 +214,10 @@
         top: 10vh;
         border-top: 1px solid #868686;
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: stretch;
         background: #ececf1;
         z-index: 70;
@@ -232,7 +233,7 @@
    }
 
    #menu ul{
-        height: 90%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -240,7 +241,7 @@
    }
 
    #menu ul:last-child{
-       justify-content:space-evenly;
+       margin-top: 20px;
    }
 
    #menu hr{
@@ -396,7 +397,7 @@
         align-items: center;
         justify-content: center;
         background-color:transparent;
-        background-image: url('coloured-button.svg');
+        background-image: url('./assets/coloured-button.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1284,4 +1285,93 @@ footer > section:last-child a:hover{
         letter-spacing: 0.105em;
         text-decoration: none;
         color: var(--secondary-color-red);
+    }
+
+    .notice-header{
+        min-height: 30vh;
+        height:30vh;
+    }
+
+    .notice-title{
+        margin: 0 auto;
+        margin-top: 120px;
+        
+    }
+
+    .notice-title h1{
+        font-size: clamp(2rem,3vw,4.2rem);
+        color: var(--text-color-black);
+    }
+
+    .notice__container{
+        padding: 20px;
+        width: 100%;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill,minmax(300px,600px)); */
+        grid-template-rows: minmax(200px,300px);
+        grid-template-columns: repeat(2,1fr);
+        /* Permite reordenar los elementos segun si entran en un espacio sobrante o no */
+        grid-auto-flow: dense;
+        gap: 20px;
+        background: #F8FAFF;
+    }
+
+    .notice__container > img{
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        object-fit:cover;
+        border-radius:20px;
+        cursor:pointer;
+        transition: all 0.3s ease;
+    }
+
+    .notice__container > img:hover{
+        filter: brightness(0.8);
+    }
+
+    .notice__tall{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .notice__long{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .notice__normal{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .notice__big{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .modal__container{
+        position: fixed;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(32,35,41,.8);
+        z-index: 60;
+        cursor: pointer;
+    }
+
+    .modal__container .modal{
+        width: 95%;  
+    }
+
+    .modal > img{
+        width: 100%;
+        min-height: 300px;
+        border: 5px solid var(--text-color-white);
+        object-fit: cover;
+        cursor: default;
     }

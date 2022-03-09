@@ -44,6 +44,8 @@ readmore_button.forEach(button=>{
 })
 
 
+
+
 // footer buttons
 
 const [...footer_more_button] = document.getElementsByClassName("footer-card__container");
@@ -72,45 +74,74 @@ if (!window.matchMedia("(min-width: 769px)").matches) {
 }
 
 // Scripts to execute sliders 
-const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
+if(window.location.href.includes('nivel-inicial.html')) {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-  emailjs.init('user_NDTpGQZNkCkZ0WMxj4kKM')
+}
 
-        const btn = document.getElementById('button');
-        const inputs = document.querySelectorAll('.inputs');
+if(window.location.href.includes('main') || window.location.href.includes('index.html') ) {
 
-        document.getElementById('form')
-        .addEventListener('submit', function(event) {
-        event.preventDefault();
-        console.log(document.querySelectorAll('option'))
-        btn.style.height="88px";
+    emailjs.init('user_NDTpGQZNkCkZ0WMxj4kKM')
+      
+    const btn = document.getElementById('button');
+    const inputs = document.querySelectorAll('.inputs');
 
-        //Service de Parroquial
-        const serviceID = 'service_2uasrtd'
-        const templateID = 'template_hlphcv8';
+    document.getElementById('form')
+    .addEventListener('submit', function(event) {
+    event.preventDefault();
 
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-            
-            alert('Tu mensaje ha sido enviado!');
+    btn.style.transform = 'scale(1.1)'
 
-            inputs.forEach(input=>{
-                input.value="";
-            })
-            }, (err) => {
-            alert('Ha ocurrido un error. Por favor, intentalo más tarde, o intenta enviar tu mensaje directamente a la respectiva dirección de mail que aparece en la lista anterior.');
-            });
+    //Service de Parroquial
+    const serviceID = 'service_2uasrtd'
+    const templateID = 'template_hlphcv8';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+        
+        alert('Tu mensaje ha sido enviado!');
+        btn.style.transform="";
+        inputs.forEach(input=>{
+            input.value="";
+        })
+        }, (err) => {
+
+        alert('Ha ocurrido un error. Por favor, intentalo más tarde, o intenta enviar tu mensaje directamente a la respectiva dirección de mail que aparece en la lista anterior.');
+        btn.style.transform="";
         });
+    });
+}
+
+
+// Modal scripts
+if(window.location.href.includes('noticias.html')){
+
+    const notice_container = document.querySelector('.notice__container');
+    const modal = document.querySelector('.modal__container');
+    const modal_img = document.querySelector('.modal-img');
+    
+        notice_container.addEventListener('click', event=>{
+            if(event.target.nodeName == 'IMG'){
+                modal.classList.remove('hidden');
+                modal_img.src = event.target.src;
+            }
+
+            
+            if(event.target.classList[0] == 'modal__container'){
+                modal.classList.add('hidden');
+            }
+        })
+}

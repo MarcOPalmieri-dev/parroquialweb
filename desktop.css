@@ -52,6 +52,10 @@ nav div ul li:hover{
     display: none;
 }
 
+#menu ul:last-child{
+    height: 80%;
+}
+
 
 
 .circle-animated{
@@ -281,4 +285,13 @@ footer > section:first-child{
 
 .contact__container input[type="submit"]{
     height: 69px;
+}
+
+.notice__container{
+    padding: 60px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.modal__container .modal{
+    width: 80%;
 }

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo-prueba.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" media="(min-width: 769px)" href="desktop.css">
+
+    <link rel="stylesheet" href="../mobile.css">
+    <link rel="stylesheet" media="(min-width: 769px)" href="../desktop.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Instituto Parroquial San Justo</title>
@@ -22,37 +24,38 @@
        <nav>
            <div>
                <div class="logo__container"> 
-                   <img loading="lazy" src="logo-prueba.png" alt="Inicio" title="Inicio">
-                   <a href="index.html"></a>
+                   <img loading="lazy" src="../assets/logo.png" alt="Inicio" title="Inicio">
+                   <a href="./index.html"></a>
                </div>
                <!-- <li class="icon logo" id="logo" alt="Parroquial"></a></li> -->
                <ul class="desktop-menu__container">
-                   <li><a href="./nivel-inicial.html">Nivel <br>Inicial</a></li>
-                   <li>Nivel <br>Primario</li>
-                   <li>Nivel <br>Secundario</li>
-                   <li>Parroquial <br>Deportes</li>
-                   <li>Espacio Cultural <br>Idiomas</li>
+                   <li><a href="./main/nivel-inicial.html">Nivel <br>Inicial</a></li>
+                   <li><a href="./main/nivel-primario.html">Nivel <br>Primario</a></li>
+                   <li><a href="./main/nivel-secundario.html">Nivel <br>Secundario</a></li>
+                   <li><a href="./main/parroquial-deportes.html"></a>Parroquial <br>Deportes</li>
+                   <li><a href="./main/espacio-idiomas.html"></a>Espacio Cultural <br>Idiomas</li>
                </ul>
                <div class="icon menu"></div>
            </div>
            
            <div id="menu" class="menu__out">
             <ul>
-                <li><a href="./nivel-inicial.html">Nivel Inicial</a></li>
-                <li><a href="">Nivel Primario</a></li>
-                <li><a href="">Nivel Secundario</a></li>
-                <li><a href="">Parroquial Deportes</a></li>
-                <li><a href="">Espacio Cultural Idiomas</a></li>
+                <li><a href="./main/nivel-inicial.html">Nivel Inicial</a></li>
+                <li><a href="./main/nivel-primario.html">Nivel Primario</a></li>
+                <li><a href="./main/nivel-secundario.html">Nivel Secundario</a></li>
+                <li><a href="./main/parroquial-deportes.html">Parroquial Deportes</a></li>
+                <li><a href="./main/espacio-idiomas.html">Espacio Cultural Idiomas</a></li>
             </ul>
                 <hr>
              <ul>
- 
-                <li><a href="./institucion.html">Nuestra Institución</a></li>
-                 <li><a href="./ideary.html">Nuestro Ideario</a></li>
-                 <li><a href="./normativas.html">Nuestra Normativa</a></li>
-                 <li><a href="./team.html">Nuestras Autoridades</a></li>
-                 <li><a href="instalaciones.html">Nuestras Instalaciones</a></li>
-                 <li><a href="">Contactanos</a></li>
+                <li><a href="../info/noticias.html">Noticias</a></li>
+                <li><a href="../info/institucion.html">Nuestra Institución</a></li>
+                 <li><a href="../info/ideario.html">Nuestro Ideario</a></li>
+                 <li><a href="../info/normativas.html">Nuestra Normativa</a></li>
+                 <li><a href="../info/equipo.html">Nuestras Autoridades</a></li>
+                 <li><a href="../info/instalaciones.html">Nuestras Instalaciones</a></li>
+                 <li><a href="#contact">Contactanos</a></li>
+                 
              </ul>
          </div>
        </nav>
@@ -79,20 +82,42 @@
                 <h2>Contactanos</h2>
                 <div class="main-title__underline"></div>
             </div>
-            <section id="contact">
-                <div>
-                    <img loading="lazy" src="circles.svg" >
-                    <input type="email" id="email" placeholder="Email" required autocomplete="email">
-                </div>
-                <div>
-                    <img loading="lazy" src="circles.svg" >
-                    <input type="text" id="subject" placeholder="Asunto" required>
-                </div>
-                <div>
-                    <img loading="lazy" src="circles.svg">
-                <textarea id="area" placeholder="Mensaje" required></textarea>
-                </div>
-                <button>Enviar</button>
+            <section class="contact__general-container" id="contact" >
+
+                <section class="contact__info">
+                    <div class="contact-info__title-container">
+                        <img loading="lazy" src="../assets/contact.png" alt="Dirección Nivel Inicial">
+                        <h3 class="contact-info__title">Dirección Nivel Inicial</h3>
+                    </div>
+                    <p><a>direccion@gmail.com</a></p>
+                </section>
+
+                <form class="contact__form" id="form"> 
+
+                    <div>
+                        <img loading="lazy" src="../assets/circles.svg" >
+                        <input type="email" class="inputs" placeholder="Email" name="form_email" required autocomplete="email">
+                    </div>
+                    
+                    <div>
+                        <img loading="lazy" src="../assets/circles.svg"  >
+                        <select name="to_email">
+                            <option value="marquitopalmieri@gmail.com">Dirección Nivel Primario</option>
+                            <option value="bybrus2004@gmail.com">Administración Nivel Primario</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <img loading="lazy" src="../assets/circles.svg" >
+                        <input type="text" class="inputs" placeholder="Asunto" name="form_subject" required>
+                    </div>
+                    <div>
+                        <img loading="lazy" src="../assets/circles.svg" >
+                    <textarea  class="inputs" placeholder="Mensaje" name="form_message" required></textarea>
+                    </div>
+                    <input type="submit" id="button" value="Enviar">
+                </form>
+                
             </section>
         </section>
         
@@ -102,7 +127,7 @@
         <section>
             <div class="footer-card__container">
                 <div class="footer-title__container">
-                    <img loading="lazy" src="instagram-logo.png" alt="Instagram">
+                    <img loading="lazy" src="./assets/instagram-logo.png" alt="Instagram">
                     <h3 class="title-one">Instagram</h3>
                 </div>
                 <div class="footer-content__container hidden">
@@ -120,7 +145,7 @@
 
             <div class="footer-card__container"> 
                 <div class="footer-title__container">
-                    <img loading="lazy" src="contact.png" alt="Contacto">
+                    <img loading="lazy" src="./assets/contact.png" alt="Contacto">
                     <h3 class="title-two">Contacto</h3>
                 </div>
                 
@@ -139,7 +164,7 @@
 
             <div class="footer-card__container">
                 <div  class="footer-title__container">
-                    <img loading="lazy" src="location.png" alt="Ubicación">
+                    <img loading="lazy" src="./assets/location.png" alt="Ubicación">
                     <h3 class="title-three">Ubicación</h3>
                 </div>
 
@@ -158,7 +183,7 @@
             <h3>Página diseñada por <a target="_blank" rel="noopener noreferrer" href="https://wa.me/qr/PEMGNMZ5BIWSN1" >Marco Palmieri</a></h3>
         </section>
     </footer>
-    <!-- <script src="particles.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
