@@ -849,6 +849,10 @@
     display: none;
 }
 
+.invisible{
+    visibility: hidden;
+}
+
 .rules__container span{
     width: fit-content;
     cursor: pointer;

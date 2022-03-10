@@ -135,13 +135,13 @@ if(window.location.href.includes('noticias.html')){
     
         notice_container.addEventListener('click', event=>{
             if(event.target.nodeName == 'IMG'){
-                modal.classList.remove('hidden');
+                modal.classList.remove('invisible');
                 modal_img.src = event.target.src;
             }
 
             
             if(event.target.classList[0] == 'modal__container'){
-                modal.classList.add('hidden');
+                modal.classList.add('invisible');
             }
         })
 }
