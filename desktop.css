@@ -65,7 +65,7 @@ nav div ul li:hover{
     /* width: 500px;
     height: 500px; */
     display: block;
-    background-image: url('circles.svg');
+    background-image: url('./assets/circles.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,4 +294,12 @@ footer > section:first-child{
 
 .modal__container .modal{
     width: 80%;
+}
+
+.swiper {
+    width: 80%;
+  }
+
+  .intro__container img{
+    padding: 0
 }
