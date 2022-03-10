@@ -75,7 +75,7 @@ if (!window.matchMedia("(min-width: 769px)").matches) {
 
 // Scripts to execute sliders 
 
-if(window.location.href.includes('nivel-inicial.html')) {
+if(window.location.href.includes('main')) {
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,

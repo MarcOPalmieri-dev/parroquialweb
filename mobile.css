@@ -846,7 +846,7 @@
 }
 
 .hidden{
-    visibility: hidden;
+    display: none;
 }
 
 .rules__container span{
