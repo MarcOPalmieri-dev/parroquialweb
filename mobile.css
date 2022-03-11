@@ -44,7 +44,7 @@
     header{
         width: 100%;
         min-height: 100vh;
-        background-image: url('./assets/fondo-max.jpg');
+        background-image: url('./assets/fondo-max.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -56,11 +56,11 @@
 
     /* Background header of "Nivel Incial */
     .first-level-header{
-        background-image: url('./images/jardin.jpeg')
+        background-image: url('./images/jardin.webp')
     }
 
     .primary-level-header{
-        background-image: url('./images/hall-colegio.jpeg')
+        background-image: url('./images/hall-colegio.webp')
     }
 
     .filter{
@@ -1160,7 +1160,7 @@ footer > section:last-child a:hover{
 }
 
 .institution__header{
-    background-image: url('../images/pasillo.jpeg');
+    background-image: url('../images/pasillo.webp');
 }
 
 .institution-general__container{
