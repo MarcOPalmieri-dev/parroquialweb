@@ -306,3 +306,7 @@ footer > section:first-child{
   .intro__container img{
     padding: 0
 }
+
+.team-cards img:hover{
+    transform: scale(1.1);
+}

@@ -1,5 +1,7 @@
 
-// AOS.init();
+AOS.init();
+
+
 
 
 const menu_button = document.getElementsByClassName("menu")[0];

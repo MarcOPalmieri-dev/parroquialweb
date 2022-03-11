@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="../desktop.css">
     <title>Parroquial San justo</title>
 </head>
 <body>
     <header  class="bars-header">
-        <nav>
+        <nav data-aos="fade-down" data-aos-duration="2000">
             <div>
                 <div class="logo__container"> 
                     <img loading="lazy" src="../assets/logo.png" alt="Inicio" title="Inicio">
@@ -56,9 +57,9 @@
             <p>Priorizando el cuidado y la alegría de toda la comunidad</p>
 
         </section>
-            <div class="header-bar bar-1"></div>
-            <div class="header-bar bar-2"></div>
-            <div class="header-bar bar-3"></div>
+        <div class="header-bar bar-1" data-aos="fade-left" data-aos-duration="2000"></div>
+        <div class="header-bar bar-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"></div>
+        <div class="header-bar bar-3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="900"></div>
     </header>
     <main>
         <section class="rules__container">
@@ -286,9 +287,9 @@
 
 
         <div class="uniform-main__container">
-            <img loading="lazy" src="team-card.jpg" alt="">
+            <img loading="lazy" src="team-card.jpg" alt="Uniforme del Parroquial San Justo" data-aos="fade-left" data-aos-duration="2000">
         
-        <section class="uniform__container">
+        <section class="uniform__container" data-aos="fade-right" data-aos-duration="2000">
             <h3>Uniforme Reglamentario Obligatorio</h3>
 
             <h4>Nivel Inicial</h4>
@@ -399,6 +400,7 @@
             <h3>Página diseñada por <a target="_blank" rel="noopener noreferrer" href="https://wa.me/qr/PEMGNMZ5BIWSN1" >Marco Palmieri</a></h3>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../scripts.js"></script>
 </body>
 </html>

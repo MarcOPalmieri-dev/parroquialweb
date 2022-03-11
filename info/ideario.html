@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="../desktop.css">
     <title>Parroquial San justo</title>
 </head>
 <body>
     <header  class="bars-header bars-header__background">
-        <nav>
+        <nav data-aos="fade-down" data-aos-duration="2000">
             <div>
                 <div class="logo__container"> 
                     <img loading="lazy" src="../assets/logo.png" alt="Inicio" title="Inicio">
@@ -55,9 +56,9 @@
             <h2>Nuestro Ideario</h2>
             <p>Un plan estratégico realizado desde el año 2017, con la colaboración de todo el equipo directivo, docentes y familias, con un objetivo a seguir: educar con alegría.</p>
         </section>
-            <div class="header-bar bar-1"></div>
-            <div class="header-bar bar-2"></div>
-            <div class="header-bar bar-3"></div>
+        <div class="header-bar bar-1" data-aos="fade-left" data-aos-duration="2000"></div>
+        <div class="header-bar bar-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"></div>
+        <div class="header-bar bar-3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="900"></div>
     </header>
     <main>
         <section class="ideary__main__container">
@@ -68,7 +69,7 @@
            
             <h2>"Hombres Nuevos Para Dios Y la Patria"</h2>
 
-            <section class="ideary__card__container">
+            <section class="ideary__card__container" data-aos="zoom-in" data-aos-duration="2000">
                 <section class="ideary__card">
                     <div>
                         <h3>Visión</h3>
@@ -85,7 +86,7 @@
                     </div>
                 </section>
     
-                <section class="ideary__card">
+                <section class="ideary__card" data-aos="zoom-in" data-aos-duration="2000">
                     <div>
                         <h3>Misión</h3>
                     </div>
@@ -102,7 +103,7 @@
                     </div>
                 </section>
     
-                <section class="ideary__card ">
+                <section class="ideary__card" data-aos="zoom-in" data-aos-duration="2000">
                     <div>
                         <h3>Valores</h3>
                     </div>
@@ -194,6 +195,7 @@
             <h3>Página diseñada por <a target="_blank" rel="noopener noreferrer" href="https://wa.me/qr/PEMGNMZ5BIWSN1" >Marco Palmieri</a></h3>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../scripts.js"></script>
 </body>
 </html>

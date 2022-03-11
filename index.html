@@ -11,17 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" media="(min-width: 769px)" href="../desktop.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Instituto Parroquial San Justo</title>
 </head>
 <body>
     <!-- Section is the background filter -->
-    <section class="filter"></section>
-    <header>
-       <nav>
+    <section class="filter" ></section>
+    <header> 
+       <nav  data-aos="fade-down" data-aos-duration="2000" > 
            <div>
                <div class="logo__container"> 
                    <img loading="lazy" src="../assets/logo.png" alt="Inicio" title="Inicio">
@@ -62,13 +61,13 @@
 
        
 
-       <div class="main-title__container">
-           <div class="main-title">
+       <div class="main-title__container" >
+           <div class="main-title" data-aos="zoom-in" data-aos-duration="1200">
                <h1>Parroquial San Justo</h1>
                 <div class="main-title__underline"></div>
            </div>
-           <h2>Una Escuela que Educa con Alegría</h2>
-           <div class="primary-button__container">
+           <h2 data-aos="zoom-in" data-aos-duration="1200">Una Escuela que Educa con Alegría</h2>
+           <div class="primary-button__container" data-aos="zoom-in-up" data-aos-duration="2200">
                <a href="#contact">Contactanos</a>
            </div>
        </div>
@@ -76,7 +75,7 @@
     <main>
 
         <section class="proyects-main__container intro__main-container">
-            <div class="intro-title">
+            <div class="intro-title" data-aos="zoom-in" data-aos-duration="1000" >
                 <h2>¿Por Qué la Alegría como Eje Transversal?</h2>
                  <div class="main-title__underline"></div>
             </div>
@@ -151,7 +150,7 @@
             </section>      
       </section>
 
-        <section class="contact__container">
+        <section class="contact__container" id="contact" >
 
             <span class="circle-animated first"></span>
             <span class="circle-animated second"></span>
@@ -159,9 +158,9 @@
                 <h2>Contactanos</h2>
                 <div class="main-title__underline"></div>
             </div>
-            <section class="contact__general-container" id="contact" >
+            <section class="contact__general-container" >
 
-                <section class="contact__info">
+                <section class="contact__info" data-aos="fade-right" data-aos-duration="1600">
                     <div class="contact-info__title-container">
                         <img loading="lazy" src="../assets/contact.png" alt="Dirección Nivel Inicial">
                         <h3 class="contact-info__title">Dirección Nivel Inicial</h3>
@@ -169,7 +168,7 @@
                     <p><a>direccion@gmail.com</a></p>
                 </section>
 
-                <form class="contact__form" id="form"> 
+                <form class="contact__form" id="form" data-aos="fade-left" data-aos-duration="2000"> 
 
                     <div>
                         <img loading="lazy" src="../assets/circles.svg" >
@@ -260,6 +259,7 @@
             <h3>Página diseñada por <a target="_blank" rel="noopener noreferrer" href="https://wa.me/qr/PEMGNMZ5BIWSN1" >Marco Palmieri</a></h3>
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="scripts.js"></script>
 </body>
