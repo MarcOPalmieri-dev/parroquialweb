@@ -59,6 +59,10 @@
         background-image: url('./images/jardin.jpeg')
     }
 
+    .primary-level-header{
+        background-image: url('./images/hall-colegio.jpeg')
+    }
+
     .filter{
         position: absolute;
         width: 100%;
@@ -66,6 +70,10 @@
         background: linear-gradient(180deg, rgba(0, 7, 32, 0.57) -1.19%, rgba(0, 12, 55, 0.228) 61.05%, rgba(0, 14, 65, 0) 100%);
         transform: matrix(1, 0, 0, -1, 0, 0);
         z-index: 62;
+    }
+
+    .primary-filter{
+        background: linear-gradient(180deg, rgb(0 7 32 / 85%) -1.19%, rgb(0 12 55 / 41%) 61.05%, rgb(0 14 65 / 0%) 100%);
     }
 
     nav{
@@ -1245,7 +1253,7 @@ footer > section:last-child a:hover{
     margin-bottom:30px;
     width: 100%;
     height: 80vh;
-    border-radius:5px;
+    border-radius:10px;
   }
 
   .swiper-slide {
@@ -1291,6 +1299,20 @@ footer > section:last-child a:hover{
     color: var(--text-color-black);
   }
 
+  .levels__explanation-text .explanation-text__features{
+      margin: 8px 0;
+    font-family:var(--secondary-font);
+    font-weight: bold;
+    font-size: clamp(1.2rem,3vw,1.6rem);
+    line-height: 186.7%;
+    letter-spacing: 0.105em;
+    color: var(--text-color-black);
+  }
+
+  .levels__explanation-text  .explanation-text__features a{
+      text-decoration: underline;
+  }
+
   .proyects-main__container{
       margin-top: 200px;
       background: var(--secondary-color-yellow);
@@ -1315,15 +1337,45 @@ footer > section:last-child a:hover{
     grid-template-columns: repeat(auto-fill,minmax(300px,700px));
   }
 
+  .timetable__container{
+      margin: 0px auto;
+      margin-top: 150px;
+      margin-bottom: 80px;
+      padding: 80px 0;
+      width: 100%;
+      text-align: center;
+      background: var(--secondary-color-red);
+  }
+
+  .timetable__container h4{
+      text-decoration: underline;
+      font-family:var(--secondary-font);
+      font-weight: 900;
+      font-size: clamp(4.2rem,3vw,7.2rem);
+      line-height: 186.7%;
+      letter-spacing: 0.105em;
+      color: var(--text-color-white);
+  }
+
+    .timetable__container > p{
+        margin: 20px 0;
+        text-decoration: none;
+        font-size: clamp(1.4rem,3vw,2rem);
+        line-height: 186.7%;
+        letter-spacing: 0.105em;
+        color: var(--text-color-white);
+    }
+
   .table-main__container{
-      padding-top:150px;
+      padding-top:120px;
       width: 100%;
       background: var(--secondary-background-color);
   }
   .table__general-container{
-    padding-bottom: 20px;
+      padding-bottom: 20px;
       margin: 20px auto;
       width: 100%;
+      height: 90vh;
       text-align: center;
       border-radius: 20px;
       box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 40%);
@@ -1345,9 +1397,9 @@ footer > section:last-child a:hover{
         scroll-snap-type: x proximity;
         margin: 0 auto;
         width: 95%;
-        height: 300px;
+        height: 60vh;
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(6,1fr);
         gap: 3%;
         justify-items: center;
         align-items: center;
@@ -1372,7 +1424,7 @@ footer > section:last-child a:hover{
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-width: 100px;
+        min-width: 140px;
         max-width: 200px;
         height: 100%;
         max-height: 100px;
@@ -1381,14 +1433,49 @@ footer > section:last-child a:hover{
         box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
     }
 
+    .table__container .cell-yellow{
+        background: var(--secondary-color-yellow);
+    }
+
+    .table__container .cell-orange{
+        background:#ffda9e
+    }
+
+    /* Reducing the font-size, because it's a long text */
+    .table__container .cell-orange > p{
+        font-size: clamp(1.2rem,2vw,1.8rem);
+        line-height: 166.7%;
+    }
+
+    .table__container .cell-red{
+        background: var(--secondary-color-red);
+    }
+
+    .table__container .cell-red > p{
+        color: white;
+    }
+
+    .table__container .cell-blue{
+        background: var(--secondary-color-blue);
+    }
+
+    .table__container .cell-blue > p{
+        color: white;
+        line-height: 136.7%;
+    }
+
+    .table__container .cell-pink{
+        background: #fdcae1;
+    }
+
     .table__content-cell p{
         font-family:var(--secondary-font);
         font-weight: 700;
-        font-size: clamp(1.2rem,3vw,2.2rem);
+        font-size: clamp(1.4rem,2vw,2rem);
         line-height: 186.7%;
         letter-spacing: 0.105em;
         text-decoration: none;
-        color: var(--secondary-color-red);
+        color: var(--text-color-black);
     }
 
     .notice-header{

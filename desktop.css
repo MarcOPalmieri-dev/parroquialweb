@@ -279,8 +279,11 @@ footer > section:first-child{
     width: 90%;
 }
 
-.table__container::-webkit-scrollbar{
-    height:0px;
+@media (min-width:1230px){
+
+    .table__container::-webkit-scrollbar{
+        height:0px;
+    } 
 }
 
 .contact__container input[type="submit"]{
