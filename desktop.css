@@ -47,6 +47,15 @@ nav div ul li:hover{
     max-width: 400px;
     
 }
+#menu{     
+    border: none;     
+    max-width: 380px;      
+} 
+
+#menu::-webkit-scrollbar{ 
+    display: none; 
+    }
+
 
 #menu hr, #menu ul:first-child{
     display: none;
@@ -88,6 +97,7 @@ nav div ul li:hover{
     animation-name: span-2;
     /* background: var(--secondary-color-yellow); */
 }
+
 
 .third{
     top: 200px;

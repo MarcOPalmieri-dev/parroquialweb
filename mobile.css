@@ -15,7 +15,7 @@
         --secondary-color-blue:#84B5FF;
         --secondary-color-yellow:#FFE26A;
 
-        --secondary-background-color:var(--secondary-background-color);
+        --secondary-background-color:#F8FAFF;
 
         --text-color-white:#FDF1F1;
         --text-color-black:#323232;
@@ -61,6 +61,14 @@
 
     .primary-level-header{
         background-image: url('./images/hall-colegio.webp')
+    }
+
+    .languages-level-header{
+        background-image: url('./images/languages.webp')
+    }
+
+    .sports-level-header{
+        background-image: url('./images/gimnasio-sup.webp')
     }
 
     .filter{
@@ -276,10 +284,11 @@
         font-weight: 600;
         font-size: 1.4rem;
         letter-spacing: 0.065em;
-        color: #585757;
+        color: var(--text-color-black);
    }
 
    #menu ul a:hover{
+       color: #4c5274;
        text-decoration: underline;
    }
 
@@ -747,6 +756,10 @@
     background:  var(--secondary-color-blue)
 }
 
+.team-cards__main-container:nth-child(10){
+    background:  var(--secondary-color-yellow)
+}
+
 .only-name p{
     margin: 10px 0;
 }
@@ -1144,8 +1157,9 @@ footer > section:last-child a:hover{
 
 .cards-title__container > h3{
     text-align: center;
+    font-family: var(--secondary-font);
     font-size: clamp(1.8rem,3vw,2rem);
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 0.105em;
     color: var(--text-color-black);
 }
@@ -1251,9 +1265,10 @@ footer > section:last-child a:hover{
 }
 
 
+
 /* Slider styles */
 .swiper {
-    margin-top: 90px;
+    margin-top: 140px;
     margin-bottom:30px;
     width: 100%;
     height: 80vh;
@@ -1282,17 +1297,21 @@ footer > section:last-child a:hover{
   .swiper {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
   }
 
-  .levels-general__container p{
+  .description__container{
+    position: relative;
+}
+
+  .description__container p{
       text-align: center;
       text-decoration: underline;
   }
 
-  .levels-general__container > .levels__explanation-text{
+
+  .description__container > .levels__explanation-text{
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 180px;
     width: 60%;
     text-decoration: none;
     font-family:var(--secondary-font);
@@ -1301,21 +1320,28 @@ footer > section:last-child a:hover{
     line-height: 186.7%;
     letter-spacing: 0.105em;
     color: var(--text-color-black);
+    
   }
 
-  .levels__explanation-text .explanation-text__features{
-      margin: 8px 0;
+  .explanation-text__features{
+    margin: 30px auto;
     font-family:var(--secondary-font);
     font-weight: bold;
     font-size: clamp(1.2rem,3vw,1.6rem);
     line-height: 186.7%;
     letter-spacing: 0.105em;
+    transition:all 0.3s ease-in-out;
+  }
+
+  .explanation-text__features:nth-child(5){
     color: var(--text-color-black);
   }
 
-  .levels__explanation-text  .explanation-text__features a{
-      text-decoration: underline;
+  .explanation-text__features:hover{
+    text-decoration: underline;
   }
+
+
 
   .proyects-main__container{
       margin-top: 200px;
@@ -1351,10 +1377,15 @@ footer > section:last-child a:hover{
       background: var(--secondary-color-red);
   }
 
-  .timetable__container > div{
+  .timetable__container > div:first-child{
       margin: 0px auto;
       margin-bottom: 40px;
       width: fit-content;
+  }
+
+  .subscribe__button{
+    margin: 0px auto;
+    margin-top: 60px;
   }
 
   .timetable__container h4{
@@ -1380,14 +1411,13 @@ footer > section:last-child a:hover{
   .table-main__container{
       padding-top:120px;
       width: 100%;
-      background: var(--secondary-background-color);
   }
   .table__general-container{
       padding-bottom: 20px;
       margin: 20px auto;
       margin-bottom: 100px;
       width: 100%;
-      height: 90vh;
+      /* height: 90vh; */
       text-align: center;
       border-radius: 20px;
       box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 40%);
@@ -1409,7 +1439,7 @@ footer > section:last-child a:hover{
         scroll-snap-type: x proximity;
         margin: 0 auto;
         width: 95%;
-        height: 60vh;
+        height: 90vh;
         display: grid;
         grid-template-columns: repeat(6,1fr);
         gap: 3%;
@@ -1428,6 +1458,10 @@ footer > section:last-child a:hover{
         background-color: var(--main-color-blue);
         border-radius: 10px;
     }
+
+    .languages__container{
+        grid-template-columns: repeat(4,1fr);
+    }
     
     .table__container .table__content-cell{
         padding: 5px;
@@ -1439,7 +1473,7 @@ footer > section:last-child a:hover{
         min-width: 140px;
         max-width: 200px;
         height: 100%;
-        max-height: 100px;
+        max-height: 120px;
         background: #F5F5F5;
         border-radius: 10px;
         box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
@@ -1453,10 +1487,8 @@ footer > section:last-child a:hover{
         background:#ffda9e
     }
 
-    /* Reducing the font-size, because it's a long text */
-    .table__container .cell-orange > p{
-        font-size: clamp(1.2rem,2vw,1.8rem);
-        line-height: 166.7%;
+    .table__container .cell-green{
+        background:#77dd77; 
     }
 
     .table__container .cell-red{
@@ -1467,24 +1499,37 @@ footer > section:last-child a:hover{
         color: white;
     }
 
+    .table__container .cell-lh-blue{
+        background: #84b6f4;
+    }
+
     .table__container .cell-blue{
         background: var(--secondary-color-blue);
     }
 
     .table__container .cell-blue > p{
         color: white;
-        line-height: 136.7%;
+        /* line-height: 136.7%; */
     }
 
     .table__container .cell-pink{
         background: #fdcae1;
     }
 
+    .table__container .cell-lh-yellow{
+        background: #ffeebc
+    }
+
+    .table__container .cell-lh-green{
+
+        background: #7ff9c7
+    }
+
     .table__content-cell p{
         font-family:var(--secondary-font);
         font-weight: 700;
-        font-size: clamp(1.4rem,2vw,2rem);
-        line-height: 186.7%;
+        font-size: clamp(1.2rem,2vw,1.6rem);
+        line-height: 166.7%;
         letter-spacing: 0.105em;
         text-decoration: none;
         color: var(--text-color-black);
@@ -1574,7 +1619,9 @@ footer > section:last-child a:hover{
     .modal > img{
         width: 100%;
         min-height: 300px;
-        border: 5px solid var(--text-color-white);
-        object-fit: cover;
+        max-height: 95vh;
+        background: rgba(32,35,41,.8);
+        box-shadow: 0px 5px 20px rgb(27 27 27 / 70%);
+        object-fit: scale-down;
         cursor: default;
     }
