@@ -313,6 +313,10 @@ footer > section:first-child{
     width: 80%;
   }
 
+  .swiper-slide img {
+    object-fit: cover;
+  }
+
   .intro__container img{
     padding: 0
 }
