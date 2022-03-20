@@ -1281,7 +1281,6 @@ footer > section:last-child a:hover{
     /* margin-top: 140px; */
     margin-bottom:30px;
     width: 100%;
-    /* height: 80vh; */
     border-radius:10px;
   }
 
@@ -1304,8 +1303,9 @@ footer > section:last-child a:hover{
   .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    /* height: 100%; */
+    height: 55vh;
+    object-fit: cover;
   }
 
   .swiper {
@@ -1421,7 +1421,7 @@ footer > section:last-child a:hover{
       width: fit-content;
       font-family:var(--secondary-font);
       font-weight: 900;
-      font-size: clamp(4.2rem,3vw,7.2rem);
+      font-size: clamp(3.2rem,3vw,7.2rem);
       line-height: 186.7%;
       letter-spacing: 0.105em;
       color: white;
@@ -1506,8 +1506,8 @@ footer > section:last-child a:hover{
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-width: 140px;
-        max-width: 200px;
+        min-width: 250px;
+        max-width: 400px;
         height: 100%;
         max-height: 120px;
         background: #F5F5F5;

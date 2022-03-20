@@ -314,7 +314,7 @@ footer > section:first-child{
   }
 
   .swiper-slide img {
-    object-fit: cover;
+    height: 100%;
   }
 
   .intro__container img{
