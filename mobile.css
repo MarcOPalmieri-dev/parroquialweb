@@ -63,6 +63,11 @@
         background-image: url('./images/hall-colegio.webp')
     }
 
+    .secondary-level-header{
+        background-image: url('./images/pasillo.webp')
+    }
+
+
     .languages-level-header{
         background-image: url('./images/languages.webp')
     }
@@ -1039,6 +1044,7 @@ footer{
     display: block;
     margin: 0 auto;
     width: 90%;
+    
 }
 
 .footer-content__container h4, .footer-content__container p, .footer-content__container ul, .footer-content__container li, .footer-content__container a{ 
@@ -1050,6 +1056,10 @@ footer{
     letter-spacing: 0.105em;
     color: var(--text-color-black);
     
+}
+
+.footer-content__container a{
+    font-size: clamp(1.1rem,3vw,1.3rem);
 }
 
 .footer-content__container a:hover{
@@ -1361,11 +1371,25 @@ footer > section:last-child a:hover{
       line-height: 186.7%;
       letter-spacing: 0.105em;
       color: var(--text-color-black);
-
   }
+
+  .proyects-main__container .coming-soon{
+    padding: 100px 0;
+    font-size: clamp(2.6rem,3vw,4.2rem);
+    color: white;
+  }
+
+  .coming-soon > span{
+      display: inline;
+      font-size:clamp(5rem,3vw,9rem);
+      font-weight: bold;
+  }
+
   .proyects-content__container{
     grid-template-columns: repeat(auto-fill,minmax(300px,700px));
   }
+
+
 
   .timetable__container{
       margin: 0px auto;
@@ -1439,10 +1463,11 @@ footer > section:last-child a:hover{
         scroll-snap-type: x proximity;
         margin: 0 auto;
         width: 95%;
-        height: 90vh;
+        /* min-height: 80vh; */
         display: grid;
         grid-template-columns: repeat(6,1fr);
-        gap: 3%;
+        grid-auto-rows: 120px;
+        gap: 7px;
         justify-items: center;
         align-items: center;
     }
@@ -1461,6 +1486,13 @@ footer > section:last-child a:hover{
 
     .languages__container{
         grid-template-columns: repeat(4,1fr);
+        /* grid-auto-rows: 150px;
+        min-height: 0; */
+    }
+
+    .secondary__container{
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 1fr;
     }
     
     .table__container .table__content-cell{
@@ -1479,12 +1511,16 @@ footer > section:last-child a:hover{
         box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
     }
 
+    .table__container .cell-grey{
+        background:#cacaca
+    }
+
     .table__container .cell-yellow{
         background: var(--secondary-color-yellow);
     }
 
     .table__container .cell-orange{
-        background:#ffda9e
+        background:#ffbc50
     }
 
     .table__container .cell-green{
@@ -1500,7 +1536,7 @@ footer > section:last-child a:hover{
     }
 
     .table__container .cell-lh-blue{
-        background: #84b6f4;
+        background: #bddbff;
     }
 
     .table__container .cell-blue{
@@ -1516,14 +1552,24 @@ footer > section:last-child a:hover{
         background: #fdcae1;
     }
 
+    .table__container .cell-purple{
+        background: #f8a3c9;
+    }
+
+    .table__container .cell-lh-purple{
+        background:#ccb0ff;
+    }
+    
     .table__container .cell-lh-yellow{
-        background: #ffeebc
+        background: #ffeebc;
     }
 
     .table__container .cell-lh-green{
-
-        background: #7ff9c7
+        background: #7ff9c7;
     }
+
+    
+
 
     .table__content-cell p{
         font-family:var(--secondary-font);
