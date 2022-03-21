@@ -324,3 +324,8 @@ footer > section:first-child{
 .team-cards img:hover{
     transform: scale(1.1);
 }
+
+.graduates-content{  
+    margin-top: 4em; 
+    width: 70%;
+}

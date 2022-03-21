@@ -372,7 +372,73 @@
     }
 
 
+    .graduates-container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("./assets/egresadoss.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
 
+    .graduates-filter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background:rgb(0 7 32 / 74%);
+        
+    }
+
+    .graduates-title h2{
+        padding-top:4em;
+        width: fit-content;
+        font-family: var(--secondary-font);
+        text-align: center;
+        font-weight: 500;
+        font-size: clamp(1.7rem,3vw,3.2rem);
+        line-height: 146.7%;
+        letter-spacing: 0.105em;
+        color: var(--text-color-white);
+    }
+
+    .graduates-content{
+        margin: 0 auto;
+        margin-top: 4em; 
+        width: 90%;
+        font-family: var(--secondary-font);
+        text-align: center;
+        font-weight: 400;
+        font-size: clamp(1.1rem,3vw,1.9rem);
+        line-height: 186.7%;
+        letter-spacing: 0.105em;
+        color: var(--text-color-white);
+    }
+
+    .graduates-details{
+        margin:0px auto;
+        margin-top: 50px;
+        padding-bottom: 40em;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
+    }
+
+    .graduates-details p{
+        padding-top: 20px;
+        max-width: 280px;
+        min-width: 220px;
+        font-family: var(--secondary-font);
+        text-align: center;
+        font-weight: bold;
+        font-size: clamp(1rem,3vw,1.7rem);
+        line-height: 166.7%;
+        letter-spacing: 0.105em;
+        color: #b5c7f6;
+    }
 
 
     /* Contact section */
@@ -1126,7 +1192,7 @@ footer > section:last-child a:hover{
 }
 
 .cards-general__container{
-    padding: 80px 20px;
+    padding: 150px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,600px));
     gap: 60px 30px;
