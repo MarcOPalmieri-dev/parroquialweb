@@ -301,7 +301,7 @@ footer > section:first-child{
 }
 
 .notice__container{
-    padding: 60px;
+    padding: 120px;
     grid-template-columns: repeat(3,1fr);
 }
 
