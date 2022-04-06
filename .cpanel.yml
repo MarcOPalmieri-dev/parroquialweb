@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/parro178/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp desktop.css $DEPLOYPATH
+    - /bin/cp mobile.css $DEPLOYPATH
+    - /bin/cp scripts.js $DEPLOYPATH
+    - /bin/cp google359b839df09adde7.html $DEPLOYPATH
+    - /bin/cp -R main $DEPLOYPATH
+    - /bin/cp -R info $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+
+    
