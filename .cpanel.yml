@@ -7,6 +7,7 @@ deployment:
     - /bin/cp mobile.css $DEPLOYPATH
     - /bin/cp scripts.js $DEPLOYPATH
     - /bin/cp google359b839df09adde7.html $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
     - /bin/cp -R main $DEPLOYPATH
     - /bin/cp -R info $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
