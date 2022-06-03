@@ -198,6 +198,10 @@ nav div ul li:hover{
     margin-left: 12%;
 }
 
+.card_4-section > div:first-child{
+    width: 60%;
+}
+
 
 .normative-title__container p{
     margin-top: 40px;
