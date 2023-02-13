@@ -214,7 +214,7 @@ nav div ul li:hover{
 }
 
 .uniform-main__container{
-    /* flex-direction: row-reverse; */
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 

@@ -28,20 +28,15 @@ off_canvas_menu.addEventListener('animationend',()=>{
 // Read more function
 
 const [...readmore_button] = document.getElementsByClassName('more');
+const [...hidden_p] = document.getElementsByClassName('hidden');
 
 readmore_button.forEach(button=>{
     
     button.addEventListener('click',(e)=>{
-        const p_element = e.path[0].previousElementSibling;
-        
-        if(p_element.classList.contains("hidden")){
-            p_element.classList.remove("hidden");
-            button.innerText="Leer menos...";
-
-        }else if(!p_element.classList.contains("hidden")){
-            p_element.classList.add("hidden")
-            button.innerText="Leer más..."
-        }
+   
+        const p_element = Array.from(e.target.parentNode.children).find(element => element.className == "hidden");
+        p_element.classList.remove("hidden");
+        button.style.display="none";
     })
 })
 
