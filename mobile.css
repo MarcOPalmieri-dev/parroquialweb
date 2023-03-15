@@ -1796,3 +1796,9 @@ footer > section:last-child a:hover{
         object-fit: scale-down;
         cursor: default;
     }
+
+    .modal > a{
+        display: block;
+        width: 100%;
+        height:100%
+        }
