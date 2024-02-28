@@ -34,7 +34,7 @@ nav div ul li:hover{
 
 
 .primary-button__container{
-    transform: scale(1.3);
+    transform: scale(1.3)!important;
 }
 
 .primary-button__container:hover{

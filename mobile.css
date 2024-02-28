@@ -198,9 +198,19 @@
         font-weight: 400;
    }
 
+   .main-title__button-container{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
    .primary-button__container{
-        width:146px;
-        height: 65px;
+        margin: 0 40px;
+        margin-top: 30px;
+        width:126px;
+        height: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -212,14 +222,14 @@
    }
 
    .primary-button__container a{
-        width: 100%;
+        width: 85%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--text-color-white);
         font-weight: 900;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         letter-spacing: 0.065em;
    }
 
@@ -1498,7 +1508,7 @@ footer > section:last-child a:hover{
 
 
 
-  .timetable__container{
+  .documents__container{
       margin: 0px auto;
       margin-top: 150px;
       margin-bottom: 80px;
@@ -1508,18 +1518,18 @@ footer > section:last-child a:hover{
       background: var(--secondary-color-red);
   }
 
-  .timetable__container > div:first-child{
+  .documents__container > div:first-child{
       margin: 0px auto;
       margin-bottom: 40px;
       width: fit-content;
   }
 
   .subscribe__button{
-    margin: 0px auto;
-    margin-top: 60px;
+    margin: 0 2%;
+    margin-top: 30px;
   }
 
-  .timetable__container h4{
+  .documents__container h4{
       padding: 0 20px;
       width: fit-content;
       font-family:var(--secondary-font);
@@ -1530,13 +1540,23 @@ footer > section:last-child a:hover{
       color: white;
   }
 
-    .timetable__container > p{
+    .documents__container > p{
         margin: 20px 0;
         text-decoration: none;
         font-size: clamp(1.4rem,3vw,2rem);
         line-height: 186.7%;
         letter-spacing: 0.105em;
         color: white;
+    }
+
+    .documents-section{
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
   .table-main__container{
