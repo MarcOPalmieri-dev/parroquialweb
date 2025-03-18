@@ -60,7 +60,7 @@
     }
 
     .primary-level-header{
-        background-image: url('./images/hall-colegio.webp')
+        background-image: url('./images/patio-primaria.webp')
     }
 
     .secondary-level-header{
@@ -1421,7 +1421,7 @@ footer > section:last-child a:hover{
     display: block;
     width: 100%;
     /* height: 100%; */
-    height: 55vh;
+    height: 65vh;
     object-fit: cover;
   }
 
