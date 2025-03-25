@@ -44,7 +44,7 @@
     header{
         width: 100%;
         min-height: 100vh;
-        background-image: url('./assets/fondo-max.webp');
+        background-image: url('./assets/fondo-main.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1717,7 +1717,7 @@ footer > section:last-child a:hover{
     .table__content-cell p{
         font-family:var(--secondary-font);
         font-weight: 700;
-        font-size: clamp(1.2rem,2vw,1.6rem);
+        font-size: clamp(1.4rem,2vw,1.8rem);
         line-height: 166.7%;
         letter-spacing: 0.105em;
         text-decoration: none;
