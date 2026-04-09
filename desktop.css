@@ -243,8 +243,14 @@ footer > section:first-child{
 }
 
 
-.footer-content__container > ul {
-    width: 100%;
+.footer-content__container > h4 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer-content__container > p {
+    margin: 0;
+    margin-bottom: 0.3rem;
 }
 
 .title-one{
