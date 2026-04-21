@@ -1580,8 +1580,11 @@ footer > section:last-child a:hover{
       margin-top: 200px;
       background: var(--secondary-color-yellow);
   }
+    .salidas-educativas{
+      background: var(--secondary-color-red);
+  }
 
-  .salidas{
+  .viajes-estudio{
       background: var(--secondary-color-blue);
   }
 
