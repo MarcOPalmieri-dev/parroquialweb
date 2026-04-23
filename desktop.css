@@ -339,3 +339,24 @@ footer > section:first-child{
     margin-top: 4em; 
     width: 70%;
 }
+
+.mascot-image__container{
+    width: 330px;
+    height: 330px;
+}
+
+
+@media (min-width: 1024px){
+    .mascot-title__container{
+        justify-content: flex-end;
+    }
+    .mascot-header-bar__container{
+        max-width: 750px;
+
+    }
+    .mascot-image__container{
+        width: 360px;
+        height: 360px;
+    }
+
+}
